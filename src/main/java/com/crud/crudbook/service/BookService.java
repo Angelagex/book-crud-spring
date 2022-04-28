@@ -33,4 +33,9 @@ public class BookService implements BookServiceInterface{
     public void deleteBook(Long id) {
         bookRepository.deleteById(id);
     }
+
+    @Override
+    public Book getBook(Long id) {
+        return bookRepository.getById(id);
+    }
 }
